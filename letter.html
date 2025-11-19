@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Love Please Listen</title>
+    <link rel="icon" href="./assets/images/favicon.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=La+Belle+Aurore&family=Parisienne&family=Pinyon+Script&display=swap" rel="stylesheet">
+</head>
+<body class="letter-bg">
+
+    <!-- Audio player: music plays throughout the website -->
+    <div class="audio-control">
+        <button id="play-btn" onclick="toggleMusic()">♪ Play Music</button>
+        <audio id="bg-music" loop>
+            <source src="./assets/audio/song.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+
+    <main class="container">
+        
+        <!-- Clickable envelope to reveal the letter -->
+        <section class="interactive-note fade-in">
+            <div class="envelope" onclick="openLetter()">
+                <span class="stamp">❤</span>
+                <p class="typewriter-text"><!-- Instruction text -->Click to Open</p>
+            </div>
+
+            <!-- Hidden letter content -->
+            <div id="hidden-message" class="hidden">
+                <p class="typewriter-text">
+                    <!-- Start writing your letter here -->
+                    My Dearest,<br><br>
+                    [Type your heartfelt words here...]<br><br>
+                    [Add more paragraphs as you like...]<br><br>
+                </p>
+            </div>
+        </section>
+
+        <!-- Signature area -->
+        <footer class="fade-in">
+            <div class="divider">❦</div>
+            <p class="signature"><!-- Replace with your name -->Your Name</p>
+        </footer>
+
+        <!-- Navigation -->
+        <div class="nav-container fade-in">
+            <a href="hundred.html" class="nav-btn">← Back</a>
+            <a href="index.html" class="nav-btn">Home ⌂</a>
+        </div>
+
+    </main>
+
+    <div id="floating-container"></div>
+    <script src="script.js"></script>
+</body>
+</html>
