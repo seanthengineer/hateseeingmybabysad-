@@ -286,3 +286,24 @@ button:hover {
     overflow: hidden;
     z-index: 50;
 }
+
+.heart-container {
+    text-align: center;
+    cursor: pointer;
+}
+
+.heart-icon {
+    width: 180px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.heart-container:hover .heart-icon {
+    transform: scale(1.1);
+}
+
+.click-label {
+    font-family: "La Belle Aurore", cursive;
+    font-size: 1.4rem;
+    margin-top: 10px;
+}
