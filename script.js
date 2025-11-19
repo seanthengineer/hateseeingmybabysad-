@@ -2,29 +2,33 @@
 // SCRIPT.JS - VINTAGE LOVE WEBSITE
 // ================================
 
-// 1. Audio Player Control with Auto-Play
+// 1. Audio Player Control with Auto-Play and Session Memory
 document.addEventListener("DOMContentLoaded", function() {
     const audio = document.getElementById('bg-music'); // Select the audio element
     const btn = document.getElementById('play-btn');   // Select the play/pause button
 
-    // Try to auto-play music when page loads
-    audio.volume = 0.8; // Optional: set starting volume (0 to 1)
-    audio.play().then(() => {
-        // Auto-play succeeded
-        btn.innerHTML = "❚❚ Pause Music";
-    }).catch(() => {
-        // Auto-play failed (browser requires user interaction)
+    // Try to auto-play music if sessionStorage says it was playing
+    if (sessionStorage.getItem('musicPlaying') === 'true') {
+        audio.volume = 0.8;
+        audio.play().then(() => {
+            btn.innerHTML = "❚❚ Pause Music";
+        }).catch(() => {
+            btn.innerHTML = "♪ Play Music"; // Browser blocks autoplay
+        });
+    } else {
         btn.innerHTML = "♪ Play Music";
-    });
+    }
 
-    // Button click toggles music play/pause
+    // Button click toggles music play/pause and remembers state
     btn.addEventListener("click", function() {
         if (audio.paused) {
             audio.play();
             btn.innerHTML = "❚❚ Pause Music";
+            sessionStorage.setItem('musicPlaying', 'true'); // Remember state
         } else {
             audio.pause();
             btn.innerHTML = "♪ Play Music";
+            sessionStorage.setItem('musicPlaying', 'false');
         }
     });
 
