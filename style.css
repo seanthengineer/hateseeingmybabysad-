@@ -200,7 +200,7 @@ body.letter-bg {
 }
 
 .scroll-content {
-    animation: scrollUp 180s linear infinite;
+    animation: scrollUp 50s linear infinite;
 }
 
 .typewriter-list {
