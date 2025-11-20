@@ -335,3 +335,8 @@ body.letter-bg {
     line-height: 1.7;
     color: #4a3b32;
 }
+
+/* --- INDEX.HTML TITLE COLOR OVERRIDE --- */
+body.home-bg .cursive-title {
+    color: #130e0a; /* Replace with your preferred color */
+}
