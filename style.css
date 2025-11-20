@@ -37,7 +37,7 @@ body.gallery-bg {
 }
 
 body.list-bg {
-    background: url('./assets/images/bg-list.jpg') no-repeat center center fixed;
+    background: url('./assets/images/photo7.png') no-repeat center center fixed;
     background-size: cover;
 }
 
@@ -200,7 +200,7 @@ body.letter-bg {
 }
 
 .scroll-content {
-    animation: scrollUp 120s linear infinite;
+    animation: scrollUp 180s linear infinite;
 }
 
 .typewriter-list {
