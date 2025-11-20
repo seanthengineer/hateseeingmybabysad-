@@ -27,7 +27,7 @@ body {
 /* --- PAGE-SPECIFIC BACKGROUNDS --- */
 /* Replace the URLs with your chosen background images for each page */
 body.home-bg {
-    background: url('./assets/images/bg-home.jpg') no-repeat center center fixed;
+    background: url('./assets/images/photo8.png') no-repeat center center fixed;
     background-size: cover;
 }
 
@@ -42,7 +42,7 @@ body.list-bg {
 }
 
 body.letter-bg {
-    background: url('./assets/images/bg-letter.jpg') no-repeat center center fixed;
+    background: url('./assets/images/photo11.png') no-repeat center center fixed;
     background-size: cover;
 }
 
