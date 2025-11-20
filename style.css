@@ -200,7 +200,7 @@ body.letter-bg {
 }
 
 .scroll-content {
-    animation: scrollUp 50s linear infinite;
+    animation: scrollUp 100s linear infinite;
 }
 
 .typewriter-list {
@@ -309,7 +309,7 @@ button:hover {
 }
 
 .list-bg {
-    background-image: url('./assets/images/photo7.png');
+    background-image: url('./assets/images/photo11.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
